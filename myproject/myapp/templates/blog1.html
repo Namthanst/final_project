@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>พระบรมมหาราชวังและวัดพระแก้ว</title>
-    <link rel="stylesheet" href="static/style2.css">
-    <link rel="stylesheet" href="static/web.css">
+    <link rel="stylesheet" href="{% static 'myapp/style2.css'%}">
+    <link rel="stylesheet" href="{% static 'myapp/web.css'%}">
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
             </ul>
         </div>
     </header>
-    <img src="grand_palace1.png" alt="Grand Palace" class="blog1">
+    <img src="{% static 'myapp/grand_palace1.png'%}" alt="Grand Palace" class="blog1">
  <div class="back"></div>
     <p class="text1">วัดพระแก้ว หรือ วัดพระศรีรัตนศาสดาราม เป็นวัดหลวงที่สำคัญในพระราชพิธีต่างๆ ที่สร้างขึ้นในพร้อมกับการสถาปนากรุงรัตนโกสินทร์ 
         ในปี พ.ศ.2325 สมัยรัชกาลที่ 1 โดยเป็นวัดในพระบรมมหาราชวังเช่นเดียวกับ วัดพระศรีสรรเพชญ์ ซึ่งเป็นวัดในพระราชวังหลวงใน
@@ -27,7 +28,7 @@
         หรือ ประเทศลาวในอดีต </p>
    
     <div class="text2"> 
-        <img src="image1.jpg" alt="วัดพระแก้ว">
+        <img src="{% static 'myapp/image1.jpg'%}" alt="วัดพระแก้ว">
         <h3>ประวัติวัดพระแก้ว</h3>
         <p> วัดพระแก้ว สร้างขึ้นพร้อมกับการสร้างพระบรมมหาราชวัง และการสถาปนากรุงเทพมหานครเป็นราชธานี ในสมัยพระบาทสมเด็จพระพุทธยอดฟ้าจุฬาโลกมหาราช 
         รัชกาลที่ 1 เมื่อปี พ.ศ. 2325 โดยเป็นสร้างตามประเพณีการสร้างพระอารามหลวงในเขตพระราชวังที่มีมาตั้งแต่อดีตก็คือวัดมหาธาตุในพระราชวังสมัยกรุงสุโขทัย 
@@ -61,32 +62,32 @@
         </ul>
     </div>
     <div class="gallery">
-        <a target="_blank" href="large-57a83858a0c53.jpg">
-          <img src="large-57a83858a0c53.jpg" alt="Cinque Terre" width="600" height="400">
+        <a target="_blank" href="{% static 'myapp/large-57a83858a0c53.jpg'%}">
+          <img src="{% static 'myapp/large-57a83858a0c53.jpg'%}" alt="Cinque Terre" width="600" height="400">
         </a>
         <div class="desc">พระอุโบสถของวัดพระแก้ว</div>
     </div>
     <div class="gallery">
-        <a target="_blank" href="ลังกา.webp">
-          <img src="ลังกา.webp" alt="Cinque Terre" width="600" height="400">
+        <a target="_blank" href="{% static 'myapp/ลังกา.webp'%}">
+          <img src="{% static 'myapp/ลังกา.webp'%}" alt="Cinque Terre" width="600" height="400">
         </a>
         <div class="desc">พระศรีรัตนเจดีย์</div>
     </div>
     <div class="gallery">
-        <a target="_blank" href="หอ.jpg">
-          <img src="หอ.jpg" alt="Cinque Terre" width="600" height="400">
+        <a target="_blank" href="{% static 'myapp/หอ.jpg'%}">
+          <img src="{% static 'myapp/หอ.jpg'%}" alt="Cinque Terre" width="600" height="400">
         </a>
         <div class="desc">หอราชกรมานุสร และหอพงศานุสร</div>
     </div>
     <div class="gallery">
-        <a target="_blank" href="ปราสาท.jpg">
-          <img src="ปราสาท.jpg" alt="Cinque Terre" width="600" height="400">
+        <a target="_blank" href="{% static 'myapp/ปราสาท.jpg'%}">
+          <img src="{% static 'myapp/ปราสาท.jpg'%}" alt="Cinque Terre" width="600" height="400">
         </a>
         <div class="desc">ปราสาทพระเทพบิดร</div>
     </div>
     <div class="gallery" >
-        <a target="_blank" href="พิพิธภัณฑ์.webp">
-          <img src="พิพิธภัณฑ์.webp" alt="Cinque Terre" width="600" height="400">
+        <a target="_blank" href="{% static 'myapp/พิพิธภัณฑ์.webp'%}">
+          <img src="{% static 'myapp/พิพิธภัณฑ์.webp'%}" alt="Cinque Terre" width="600" height="400">
         </a>
         <div class="desc">พิพิธภัณฑ์วัดพระศรีรัตนศาสดาราม</div>
     </div>
