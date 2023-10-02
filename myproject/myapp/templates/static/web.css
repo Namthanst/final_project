@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EAE3D2;
+    font-family: 'Mukta', sans-serif;
+}
+img{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #1C3879;
+    position: sticky;
+    top: 0; left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0 15px 15px rgba(0,0,0,0.05);
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.group{
+    display: flex;
+    align-items: center;
+}
+header a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: #f9f9f9;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+header ul{
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: #f9f9f9;
+    letter-spacing: 0.2em;
+}
+a.active,a:hover{
+    color: #607EAA;
+    background: linear-gradient(90deg, rgbs(2,0,2,0.21) 40%,regbs(0,242,255,0.5) 100%);
+    transition: .5s;
+}
+html{
+scroll-behavior: smooth;
+}
+.text{
+    width: fit-content;
+    color: #1C3879;
+    font-size: 50px;
+    font-style: italic;
+    font:bolder;
+    text-align: center;
+    padding-top: 50px;
+}
+.home1{
+    background-image: url("1.png");
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    text-transform: uppercase;
+    align-content: center;
+    justify-content: center;
+}
+.home2{
+    background-image: url("2.png");
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+}
+.home3{
+    background-image: url("3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+}
+div.home2 h3{
+    width: fit-content;
+    font-size: 45px;
+    color: #EAE3D2;
+    text-align: center;
+    position: relative;
+    top: 150px;
+    left: 950px;
+}
+div.home2 p{
+    width: 520px;
+    font-size: 24px;
+    text-align: left;
+    color: #EAE3D2;
+    position: relative;
+    top: 200px;
+    left: 900px;
+}
+div.home3 h3{
+    width: 450px;
+    font-size: 50px;
+    color: #EAE3D2;
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+
+div.home3 p{
+    width: 450px;
+    font-size: 25px;
+    color: #EAE3D2;
+    position: relative;
+    top: 180px;
+    left: 100px;
+}
+.button1{
+    background-color: #607EAA;
+    border: none;
+    width: 130px;
+    height: 50px;
+    color: #EAE3D2;
+    font-size: 16px;
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+.button1:hover{
+    background-color: #4a5b83;
+    color: white;
+}
