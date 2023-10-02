@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def index(request):
+def home(request):
     return render(request, 'home.html')
 
-def second(request):
+def login(request):
     return render(request, 'login.html')
 
 def blog(request):
