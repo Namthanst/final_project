@@ -26,3 +26,6 @@ def blog(request):
 
 def blog2(request):
     return render(request, 'blog2.html')
+
+def blog3(request):
+    return render(request, 'blog3.html')
