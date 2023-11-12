@@ -45,6 +45,9 @@ def blog8(request):
 def blog5(request):
     return render(request, 'blog5.html')
 
+def blog9(request):
+    return render(request, 'blog9.html')
+
 def blog10(request):
     return render(request, 'blog10.html')
 
@@ -75,7 +78,8 @@ def link7(request):
 def link8(request):
     return render(request, 'blog8.html')
 
-
+def link9(request):
+    return render(request, 'blog9.html')
 
 def link10(request):
     return render(request, 'blog10.html')            
