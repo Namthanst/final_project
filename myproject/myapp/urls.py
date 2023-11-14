@@ -14,6 +14,7 @@ urlpatterns = [
     path('blog5/', views.blog5, name='blog5'),
     path('blog10/', views.blog10, name='blog10'),
     path('review/', views.review, name='review'),
+    path('home/', views.home, name='review'),
     path('cpmixlink/', views.cpmixlink, name='cpmixlink'),
     path('cpmixlink/blog3', views.link, name='link'),
     path('cpmixlink/blog', views.link1, name='link1'),

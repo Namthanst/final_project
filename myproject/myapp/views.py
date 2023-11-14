@@ -43,10 +43,7 @@ def blog7(request):
 
 def blog8(request):
     return render(request, 'blog8.html')
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 def blog5(request):
     return render(request, 'blog5.html')
 
@@ -56,7 +53,6 @@ def blog9(request):
 def blog10(request):
     return render(request, 'blog10.html')
 
-<<<<<<< Updated upstream
 def cpmixlink(request):
     return render(request, 'cpmixlink.html')
 
@@ -93,5 +89,3 @@ def link10(request):
 def review(request):
     return render(request, 'review.html') 
 
-=======
->>>>>>> Stashed changes
