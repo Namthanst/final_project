@@ -1,7 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import InputForm
+from django.contrib.auth.models import User
 from .models import Member
+from django.contrib import messages
 
 def home(request):
     return render(request, 'home.html')
@@ -30,7 +32,6 @@ def blog2(request):
 def blog3(request):
     return render(request, 'blog3.html')
 
-
 def blog4(request):
     return render(request, 'blog4.html')
 
@@ -42,12 +43,17 @@ def blog7(request):
 
 def blog8(request):
     return render(request, 'blog8.html')
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 def blog5(request):
     return render(request, 'blog5.html')
 
 def blog10(request):
     return render(request, 'blog10.html')
 
+<<<<<<< Updated upstream
 def cpmixlink(request):
     return render(request, 'cpmixlink.html')
 
@@ -55,7 +61,7 @@ def link(request):
     return render(request, 'blog3.html')    
 
 def link1(request):
-    return render(request, 'blog.html')
+    return render(request, 'blog1.html')
 
 def link2(request):
     return render(request, 'blog2.html')
@@ -75,7 +81,14 @@ def link7(request):
 def link8(request):
     return render(request, 'blog8.html')
 
-
+def link9(request):
+    return render(request, 'blog9.html')
 
 def link10(request):
-    return render(request, 'blog10.html')            
+    return render(request, 'blog10.html') 
+
+def review(request):
+    return render(request, 'review.html') 
+
+=======
+>>>>>>> Stashed changes

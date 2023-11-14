@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="{% static 'myapp/jsLogin.js'%}" defer></script>
     <link rel="stylesheet" href="{% static 'myapp/style1.css'%}">
     <link rel="stylesheet" href="{% static 'myapp/web.css'%}">
 </head>
@@ -14,27 +15,37 @@
         <a href="#" class="logo">logo</a>
         <div class="group">
             <ul class="navigation">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">REVIEW</a></li>
-                <li><a href="#">LOGIN</a></li>
+                <li><a href="home">HOME</a></li>
+                <li><a href="cpmixlink">BLOG</a></li>
+                <li><a href="review">REVIEW</a></li>
+                <li><a href="login">LOGIN</a></li>
             </ul>
         </div>
     </header>
     <div class="login"></div>
     <div class="op">
-        
         <h3>User Login</h3>
-        
-        <input type="text" placeholder="Username" id="Username">
-        <input type="password" placeholder="Password" id="password" aria-posinset="3px">
-        <button >Login</button>
+        <form action="">
+            <input type="text6" placeholder="Username" id="Username">
+            <input type="password" placeholder="Password" id="password" aria-posinset="3px">
+            <button onclick="auth()">Log In</button>
+        </form>  
     <img src="{% static 'myapp/person.png'%}" alt="person" class="imglogin">
+    
     </div>
-    <form action="" method="post">
-        {% csrf_token %}
-        {{ form.as_p}}
-        <input type="submit" value="submit">
-    </form>
+    <script>
+        function auth(){
+            var username = document.getElementById("Username").value;
+            var pass = document.getElementById("password").value;
+            if (username == "Lamthan" && pass == "123456789"){
+                window.location.assign("home.html");
+                alert("Login Successfully");
+            }
+            else{
+                alert("Invalid Information ");
+                return;
+            }
+        }
+    </script>
 </body>
 </html>
